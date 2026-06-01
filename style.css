@@ -1,0 +1,140 @@
+
+   body {
+    
+        background-color: #0a0a0f;
+        background-image: linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 30px 30px;
+       
+    
+    color: #ffffff; 
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+ h1 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #bd00ff, #00ffff);
+    
+    
+    -webkit-background-clip: text; 
+    background-clip: text;        
+    -webkit-text-fill-color: transparent; 
+    
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+    margin-bottom: 20px;
+    }
+    .hero {
+        text-align: center;      
+        padding: 80px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: center;
+    }
+
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #14141f;
+}
+
+nav ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none; 
+}
+
+nav ul li a:hover {
+    color: #00ffff; 
+    text-shadow: 0 0 10px #00ffff; 
+    border-bottom: 2px solid #00ffff; 
+    padding-bottom: 5px; 
+    transition: all 0.3s ease; 
+}
+
+.cta-btn {
+    background: transparent;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffff; 
+    transition: all 0.3s ease; 
+}
+
+.cta-btn:hover {
+    background-color: #00ffff;
+    color: #000;
+    box-shadow: 0 0 25px #00ffff;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    padding: 50px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+.card {
+        
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-10px); 
+    border-color: #00ffff; 
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); 
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .card {
+        width: 90%; 
+    }
+    
+}
